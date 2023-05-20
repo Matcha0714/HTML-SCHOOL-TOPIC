@@ -3,6 +3,22 @@ div {
     cursor: context-menu;
 }
 
+th, td {
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.new_menu {
+    display: flex;
+    top: 70px;
+    margin-bottom: -540px;
+    margin-top: 40px;
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
