@@ -19,8 +19,8 @@
 	<script src="js/js/list_news.js"></script>
 	<script src="js/js/cd19_data.js"></script>
 
-	<script>$(function(){ alert('網站已停止更新'); })</script>
-	
+	<!-- <script>$(function () { alert('網站已停止更新'); })</script> -->
+
 	<style>
 		.list-group {
 			max-width: 300px;
@@ -36,8 +36,9 @@
 </head>
 
 <body>
-	
-	<div style="height: 85px; text-align: center; line-height: 80px; font-size: 28px; font-weight: bold; background-color:rgb(253, 253, 253);">
+
+	<div
+		style="height: 85px; text-align: center; line-height: 80px; font-size: 28px; font-weight: bold; background-color:rgb(253, 253, 253);">
 		<img src="img/covid-19.jpg" width="55px"> 　防 疫 專 家
 	</div>
 	<!-- navbar -->
@@ -54,15 +55,19 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">國家防疫網站</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" target="_blank" href="https://www.cdc.gov.tw/">衛生福利部疾病管制署</a></li>
-							<li><a class="dropdown-item" target="_blank" href="https://covid-19.nchc.org.tw/">COVID-19 全球疫情地圖</a></li>
+							<li><a class="dropdown-item" target="_blank" href="https://www.cdc.gov.tw/">衛生福利部疾病管制署</a>
+							</li>
+							<li><a class="dropdown-item" target="_blank" href="https://covid-19.nchc.org.tw/">COVID-19
+									全球疫情地圖</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://www.cdc.gov.tw/Category/List/_FFjBSOizDNbJZZV1Bosew" target="_blank">各縣市確診足跡</a>
+						<a class="nav-link" href="https://www.cdc.gov.tw/Category/List/_FFjBSOizDNbJZZV1Bosew"
+							target="_blank">各縣市確診足跡</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://www.ptt.cc/bbs/nCoV2019/index.html" target="_blank">nCoV 時勢欄</a>
+						<a class="nav-link" href="https://www.ptt.cc/bbs/nCoV2019/index.html" target="_blank">nCoV
+							時勢欄</a>
 					</li>
 				</ul>
 				<!-- nav-time.js -->
@@ -110,24 +115,208 @@
 	<!-- cd19-data -->
 	<hr style="padding-top: 2px; width: 97%; margin: auto; margin-top: 10px; margin-bottom: 20px;">
 	<div id="js-cd19-data" style="padding-left: calc(50% - 512px); padding-right: calc(50% - 512px);">
-		<div class="d-flex justify-content-center"><div>
-			
-		</div></div>
+		<div class="d-flex justify-content-center">
+			<div>
+
+			</div>
+		</div>
 		<div style="height: 10px;"></div>
 		<div style="display: flex;">
 			<!-- cd19_data.js -->
 		</div>
-	</div >
+	</div>
 	<hr style="padding-top: 2px; width: 97%; margin: auto; margin-top: 20px; margin-bottom: 10px;">
 
 	<!-- imformation -->
-	<div style="display: flex;">
+	<div class="new_menu" style="position: sticky;">
 		<!-- NewsList -->
 		<div class="list-bar ms-auto" style="margin-right: 10px;">
 			<div class="overflow-auto">
 				<div id="js-insert-news" class="list-group">
 					<!-- list_news.js -->
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="" style="min-width: 800px; width: 60%; align-items: center; margin: auto;">
+		<div style="margin-top: 40px;">
+			<div style="padding: 8px; text-align: center; background-color: #EEEEEE; font-size: 30px; margin: auto;">
+				疫苗相關資訊</div>
+			<div style="margin-top: 30px;">
+				<div style="text-align: center; font-weight: bold; font-size: 24px; margin-bottom: 10px;">全國
+					COVID-19 公費疫苗各年齡涵蓋率</div>
+				<table class="table table-striped table-hover" style="margin-top: 10px; margin: auto; width: 90%;">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">12-17</th>
+							<th scope="col">18-29</th>
+							<th scope="col">30-49</th>
+							<th scope="col">50-64</th>
+							<th scope="col">65-74</th>
+							<th scope="col">75以上</th>
+							<th scope="col">總計</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">第一劑</th>
+							<td>88.8%</td>
+							<td>96.5%</td>
+							<td>92.9%</td>
+							<td>84.0%</td>
+							<td>84.5%</td>
+							<td>73.8%</td>
+							<td>80.0%</td>
+						</tr>
+						<tr>
+							<th scope="row">第二劑</th>
+							<td>44.9%</td>
+							<td>80.7%</td>
+							<td>81.5%</td>
+							<td>76.6%</td>
+							<td>79.7%</td>
+							<td>67.2%</td>
+							<td>69.3%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div style="margin-top: 30px;">
+				<div style="text-align: center; font-weight: bold; font-size: 24px; margin-bottom: 10px;">全國
+					COVID-19 疫苗封緘數量及實際接種人次(各廠牌別)
+				</div>
+				<table class="table table-striped table-hover" style="margin-top: 10px; margin: auto; width: 90%;">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">AZ</th>
+							<th scope="col">莫德納</th>
+							<th scope="col">輝瑞</th>
+							<th scope="col">高端</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">疫苗封緘數量</th>
+							<td>13,825,250</td>
+							<td>10,111,300</td>
+							<td>12,348,132</td>
+							<td>4,844,694</td>
+						</tr>
+						<tr>
+							<th scope="row">實際接種人次</th>
+							<td>15,031,652</td>
+							<td>7,797,634</td>
+							<td>10,934,057</td>
+							<td>1,486,451</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div style="margin-top: 40px;">
+			<div style="padding: 8px; text-align: center; background-color: #EEEEEE; font-size: 30px; margin: auto;">
+				疫情相關資訊</div>
+			<div style="margin-top: 30px;">
+				<div style="text-align: center; font-weight: bold; font-size: 24px; margin-bottom: 10px;">
+					本土確定病例及死亡數統計</div>
+				<table class="table table-striped table-hover" style="margin: auto; width: 90%;">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th colspan="2" scope="col">確定病例</th>
+							<th colspan="2" scope="col">死亡病例</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">年齡</th>
+							<td>男性</td>
+							<td>女性</td>
+							<td>男性</td>
+							<td>女性</td>
+						</tr>
+						<tr>
+							<th scope="row">0-9</th>
+							<td>266</td>
+							<td>242</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">10-19</th>
+							<td>290</td>
+							<td>270</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">20-29</th>
+							<td>804</td>
+							<td>670</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th scope="row">30-39</th>
+							<td>1122</td>
+							<td>1068</td>
+							<td>7</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<th scope="row">40-49</th>
+							<td>1007</td>
+							<td>1256</td>
+							<td>7</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<th scope="row">50-59</th>
+							<td>1216</td>
+							<td>1468</td>
+							<td>50</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<th scope="row">60-69</th>
+							<td>1558</td>
+							<td>1354</td>
+							<td>156</td>
+							<td>72</td>
+						</tr>
+						<tr>
+							<th scope="row">70-79</th>
+							<td>769</td>
+							<td>607</td>
+							<td>170</td>
+							<td>88</td>
+						</tr>
+						<tr>
+							<th scope="row">80-89</th>
+							<td>264</td>
+							<td>249</td>
+							<td>104</td>
+							<td>82</td>
+						</tr>
+						<tr>
+							<th scope="row">90以上</th>
+							<td>65</td>
+							<td>67</td>
+							<td>41</td>
+							<td>31</td>
+						</tr>
+						<tr>
+							<th scope="row">總計</th>
+							<td>7361</td>
+							<td>7251</td>
+							<td>535</td>
+							<td>303</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
